@@ -1,0 +1,10 @@
+<div class="jumbotron text-center">
+	<h1>Home Page</h1>
+<div id="slider">
+    <div ng-repeat="task in tasks track by $index" class={{$index}}>
+        <p>{{task.taskName}}</p>
+        <button class="sliderBtnPrev">Prev</button><button class="sliderBtnPrev">Next</button>
+    </div>
+</div>
+
+</div>

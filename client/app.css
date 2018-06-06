@@ -1,0 +1,28 @@
+.slider {
+    width: 80%;
+    margin:auto;
+}
+h2,h1,p,img,div {
+    text-align:center;
+}
+div.white-space-pre-line {
+    white-space: pre-line;
+}
+.countries.ng-scope {
+    width: 24%;
+    float: left;
+    text-align:center;
+}
+.arrows {
+    text-align: center;
+}
+.arrows img {
+    max-width: 200px;
+}
+.rotator {
+  -webkit-transform: rotate(180deg);     /* Chrome and other webkit browsers */
+  -moz-transform: rotate(180deg);        /* FF */
+  -o-transform: rotate(180deg);          /* Opera */
+  -ms-transform: rotate(180deg);         /* IE9 */
+  transform: rotate(180deg);   
+}

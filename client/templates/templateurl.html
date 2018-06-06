@@ -1,0 +1,19 @@
+<div class="slider">
+		<div class="arrows">
+		<a href="#" ng-click="prev()"><img src="http://www.clker.com/cliparts/5/f/7/l/c/0/green-arrow-left-hi.png"/></a> <a href="#" ng-click="next()"><img class="rotator" src="http://www.clker.com/cliparts/5/f/7/l/c/0/green-arrow-left-hi.png"/></a>
+	</div>
+	<div class="slide" ng-repeat="image in images" ng-show="image.visible">
+		<h2>{{image.title}}</h2>
+		<img ng-if="image.src" ng-src="{{image.src}}"/>
+		<div ng-if="image.check" class="white-space-pre-line">{{image.result}}</div>
+		<div ng-if="image.countries" >
+			
+			<div ng-repeat="country in image.countries" class="countries">
+				<h2>{{country[0][0]}}</h2>
+				<p ng-repeat="city in country[0].cities  track by $index">{{city}} </p>
+			</div>
+			
+		</div>
+	</div>
+
+</div>
