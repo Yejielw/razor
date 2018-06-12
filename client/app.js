@@ -7,8 +7,6 @@ razorApp.controller('razorController', function($scope, $http) {
         url: 'http://northwind.servicestack.net/customers.json'
     }).then(function successCallback(response) {
         usersData = response.data;
-        console.log('**** user data')
-        console.log(usersData)
         getData();
         var dataSlide = Object.keys(dataForSlide).map(function(key) {
             return [dataForSlide[key]];
